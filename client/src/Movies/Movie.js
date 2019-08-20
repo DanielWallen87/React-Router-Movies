@@ -37,7 +37,7 @@ const Movie = (props) => {
   // // )
 
   const { title, director, metascore, stars } = movie;
-  
+
   return (
     <div className="save-wrapper">
       <div className="movie-card">
@@ -56,12 +56,12 @@ const Movie = (props) => {
             {star}
           </div>
         ))}
-      </div>
+      </div> 
 
-      {/* <div onClick={(event) => {
+      <div onClick={(event) => { 
         event.preventDefault(); // stops automatic reload
         props.addToSavedList(movie);
-      }} className="save-button">Save</div> */}
+      }} className="save-button">Save</div>
 
     </div>
   );
