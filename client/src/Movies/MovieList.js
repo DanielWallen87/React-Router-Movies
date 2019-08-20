@@ -29,7 +29,9 @@ const MovieList = props => {
 }
 
 function MovieDetails({ movie }) {
+
   const { title, director, metascore, stars, id } = movie;
+  
   return (
     <Link to={`/movies/${movie.id}`}>
     <div className="movie-card">
@@ -50,6 +52,7 @@ function MovieDetails({ movie }) {
     </div>
     </Link>
   );
+  
 }
 
 export default MovieList;
