@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const MovieCard = props => {
 
-  const { title, director, metascore, stars } = props.movie;
+  const { title, director, metascore, stars } = props.movie; // all of these keys and corresponding values will be used as props
  
   return (
     <div className="save-wrapper">
@@ -27,7 +27,7 @@ const MovieCard = props => {
 
       <div onClick={(event) => { 
         event.preventDefault(); // stops automatic reload
-        props.addToSavedList(props.movie);
+        props.addToSavedList(props.movie); // feeds prop (movie title) up to function in "App"
       }} className="save-button">Save</div>
 
     </div> // close "save-wrapper" and closing tag above it closes "movie-card"

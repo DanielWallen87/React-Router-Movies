@@ -10,7 +10,7 @@ const App = () => {
 
   const addToSavedList = movie => {
     setSavedList( [...savedList, movie] );
-  };
+  }; // feeds movie info (obtained from click event in MovieCard) to SavedList
 
   return (
     <div>
